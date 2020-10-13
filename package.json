@@ -5,7 +5,9 @@
   "author": "David Asensio Cañas <david.asensio@icloud.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nuxt"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start"
   },
   "devDependencies": {
     "node-sass": "^4.14.1",
