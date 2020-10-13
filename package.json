@@ -3,5 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "David Asensio Cañas <david.asensio@icloud.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "dev": "nuxt"
+  },
+  "devDependencies": {
+    "nuxt": "^2.14.6"
+  }
 }
