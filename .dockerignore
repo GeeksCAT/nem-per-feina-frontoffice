@@ -1,0 +1,6 @@
+# Standard docker ignore for nodejs
+.git
+.github
+.gitignore
+node_modules
+env
