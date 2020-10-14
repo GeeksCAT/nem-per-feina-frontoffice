@@ -14,7 +14,7 @@ export default {
   props: {
     label: {
       type: String,
-      required: true,
+      required: true
     },
     variant: {
       type: String,
@@ -24,20 +24,20 @@ export default {
           'primary',
           'flat'
         ].includes(value)
-    },
+    }
   },
-  
+
   emits: ['on-click'],
 
   computed: {
-    classes() {
+    classes () {
       return {
-        'Button': true,
-        [`Button--variant-${this.variant}`]: true,
-      };
-    },
-  },
-};
+        Button: true,
+        [`Button--variant-${this.variant}`]: true
+      }
+    }
+  }
+}
 </script>
 
 <style scoped lang="scss">
@@ -65,7 +65,7 @@ export default {
           border-color: rgb(253, 162, 161);
         }
       }
-  
+
       &-flat {
         color: rgb(255, 116, 115);
         background: transparent;

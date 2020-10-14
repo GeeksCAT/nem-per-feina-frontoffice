@@ -6,16 +6,15 @@
   />
 </template>
 
-
 <script>
 import { Button } from '../components/Button'
 
 export default {
   components: { Button },
   methods: {
-    onButtonClick() {
+    onButtonClick () {
       alert('Button have been clicked')
-    },
-  },
+    }
+  }
 }
 </script>
