@@ -7,9 +7,18 @@
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start"
+    "start": "nuxt start",
+    "lint": "eslint 'src/**/*.{js,vue}'",
+    "lint:fix": "yarn lint --fix"
   },
   "devDependencies": {
+    "eslint": "^7.11.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-vue": "^7.0.1",
     "node-sass": "^4.14.1",
     "nuxt": "^2.14.6",
     "sass-loader": "^10.0.3"
