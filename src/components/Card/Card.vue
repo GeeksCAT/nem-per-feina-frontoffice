@@ -12,8 +12,8 @@
         <a href="#">{{ofert.title | capitalize}}</a>
       </h5>
       <p>
-        {{ofert.location}} 
-        <span class="featured-badge">Full time</span>                            
+        {{ofert.location}}
+        <span class="featured-badge">Full time</span>
       </p>
       <p>{{ofert.desc}}</p>
     </div>
@@ -30,7 +30,7 @@ export default {
           title: '',
           desc: '',
           location: '',
-          thumbnail: '',
+          thumbnail: ''
         }
       }
     }
