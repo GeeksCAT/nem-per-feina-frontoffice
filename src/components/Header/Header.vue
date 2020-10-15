@@ -21,7 +21,7 @@ export default {
 
 <style scoped lang="scss">
 .header {
-  width: 100% !important;
+  width: 100%;
 }
 
 .navbar {
