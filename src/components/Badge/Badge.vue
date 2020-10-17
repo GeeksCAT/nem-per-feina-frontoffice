@@ -32,8 +32,8 @@ export default {
   computed: {
     classes () {
       return {
-        badge: true,
-        [`badge--${this.variant}`]: true
+        Badge: true,
+        [`Badge--${this.variant}`]: true
       }
     }
   }
@@ -41,7 +41,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-    .badge {
+    .Badge {
         text-transform: uppercase;
         font-family: "Montserrat",Helvetica,Arial,sans-serif;
         font-size: 0.65rem;
