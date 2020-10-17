@@ -30,7 +30,7 @@ export default {
   components: { Button, Header, Link, Icon, Footer },
   methods: {
     onButtonClick () {
-      alert('Button have been clicked')
+      alert('Button have been clickede2332')
     }
   }
 }
