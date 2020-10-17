@@ -1,8 +1,8 @@
 <template>
   <h5>
-    <a class="Link" 
+    <a class="Link"
       :href="destination"
-      @click="$emit('on-click')"> 
+      @click="$emit('on-click')">
       {{ label }}
     </a>
   </h5>
@@ -18,7 +18,7 @@ export default {
     },
     destination: {
       type: String,
-      required: true 
+      required: true
     }
   },
   emits: ['on-click']
