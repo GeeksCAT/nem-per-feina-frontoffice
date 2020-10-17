@@ -1,7 +1,7 @@
 <template>
-  <header class="header">
-    <nav class="navbar">
-      <div class="container">
+  <header class="Header">
+    <nav class="Navbar">
+      <div class="Container">
         <a href="/" class="Logo">
           <img
             src="../../assets/img/logotip-anem-per-feina.png"
@@ -20,15 +20,15 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.header {
+.Header {
   width: 100%;
 }
 
-.navbar {
+.Navbar {
   background: #746ea9;
 }
 
-.container {
+.Container {
   width: 100%;
   padding-right: 10%;
   padding-left: 10%;
