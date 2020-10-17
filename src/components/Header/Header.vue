@@ -24,7 +24,6 @@ export default {
 }
 
 .NavBar {
-  width: 100%;
   max-width: 1920px;
   margin: 0 auto;
   padding: 0.5em 1em;
