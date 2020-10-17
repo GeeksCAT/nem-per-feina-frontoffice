@@ -2,7 +2,7 @@
   <header class="header">
     <nav class="navbar">
       <div class="container">
-        <a href="/" class="navbar-brand">
+        <a href="/" class="Logo">
           <img
             src="../../assets/img/logotip-anem-per-feina.png"
             alt="Logotip Anem per feina"
@@ -36,7 +36,7 @@ export default {
   margin-left: auto;
 }
 
-.navbar-brand {
+.Logo {
   display: inline-block;
   margin-right: 1rem;
 }
