@@ -4,7 +4,7 @@
       <div class="container">
         <a href="/" class="navbar-brand">
           <img
-            src="@/assets/img/logotip-anem-per-feina.png"
+            src="../../assets/img/logotip-anem-per-feina.png"
             alt="Logotip Anem per feina"
           />
         </a>
