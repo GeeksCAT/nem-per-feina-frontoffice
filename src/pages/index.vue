@@ -1,21 +1,20 @@
 
 <template>
-  <div>
-    <Button
-      label="Click me!"
-      @on-click="onButtonClick"
-    />
-
-    <Card :ofert="ofert" />
-  </div>
+<div>
+  <Header />
+   <Button
+    label="Click me!"
+    @on-click="onButtonClick"
+  />
+</div>
 </template>
 
 <script>
 import { Button } from '../components/Button'
-import { Card } from '../components/Card'
+import { Header } from '../components/Header'
 
 export default {
-  components: { Button, Card },
+  components: { Button, Header },
   methods: {
     onButtonClick () {
       alert('Button have been clicked')
@@ -33,3 +32,9 @@ export default {
   }
 }
 </script>
+
+<style>
+* {
+  margin: 0;
+}
+</style>
