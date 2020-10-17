@@ -1,7 +1,7 @@
 
 <template>
 <div>
-  <app-header />
+  <Header />
    <Button
     label="Click me!"
     @on-click="onButtonClick"
@@ -14,7 +14,7 @@ import { Button } from '../components/Button'
 import { Header } from '../components/Header'
 
 export default {
-  components: { Button, 'app-header': Header },
+  components: { Button, Header },
   methods: {
     onButtonClick () {
       alert('Button have been clicked')
