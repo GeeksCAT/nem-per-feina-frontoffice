@@ -1,39 +1,33 @@
 <template>
   <header class="Header">
-    <nav class="Navbar">
-      <div class="Container">
-        <a href="/" class="Logo">
-          <img
-            src="../../assets/img/logotip-anem-per-feina.png"
-            alt="Logotip Anem per feina"
-          />
-        </a>
-      </div>
+    <nav class="NavBar">
+      <a href="/" class="Logo">
+        <img
+          src="../../assets/img/logotip-anem-per-feina.png"
+          alt="Logotip Anem per feina"
+        />
+      </a>
     </nav>
   </header>
 </template>
 
 <script>
 export default {
-  name: 'Button'
+  name: 'Header'
 }
 </script>
 
 <style scoped lang="scss">
 .Header {
-  width: 100%;
-}
-
-.Navbar {
+  width: 100vw;
   background: #746ea9;
 }
 
-.Container {
+.NavBar {
   width: 100%;
-  padding-right: 10%;
-  padding-left: 10%;
-  margin-right: auto;
-  margin-left: auto;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0.5em 1em;
 }
 
 .Logo {
