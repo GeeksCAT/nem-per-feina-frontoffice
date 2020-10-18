@@ -11,13 +11,18 @@
     "lint:style": "stylelint 'src/**/*.{scss,vue}'",
     "lint:js": "eslint 'src/**/*.{js,vue}'",
     "lint": "yarn lint:js ; yarn lint:style",
-    "lint:fix": "yarn lint:js --fix ; yarn lint:style --fix",
+    "lint:fix:js": "yarn lint:js --fix",
+    "lint:fix:style": "yarn lint:style --fix",
+    "lint:fix": "yarn lint:fix:js ; yarn lint:fix:style",
     "storybook": "start-storybook -p 6006",
     "storybook:build": "build-storybook"
   },
   "lint-staged": {
     "*.{js,vue}": [
-      "yarn lint:fix"
+      "yarn lint:fix:js"
+    ],
+    "*.{scss,vue}": [
+      "yarn lint:fix:style"
     ]
   },
   "husky": {
