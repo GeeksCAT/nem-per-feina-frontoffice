@@ -1,14 +1,14 @@
 <template>
   <div class="Card">
-    <img class="Card__image" :src="image" :alt="imageAlt" />
+    <img class="Card--image" :src="image" :alt="imageAlt" />
 
-    <div class="Card__title">
+    <div class="Card--title">
       <h5>
         <a> {{ title }} </a>
       </h5>
     </div>
 
-    <div class="Card__content">
+    <div class="Card--content">
       <slot name="card-content" />
     </div>
   </div>
@@ -41,31 +41,29 @@ export default {
 
 <style scoped lang="scss">
 .Card {
-  background-color: white;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
 
-  &__image {
-    width: 100%;
+  &--image {
     height: auto;
+    width: 100%;
     margin-bottom: 10px;
   }
 
-  &__title {
+  &--title {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     margin-bottom: 10px;
-
     h5 {
       font-size: .875rem;
-      text-transform: uppercase;
+      font-family: 'Montserrat', Helvetica, Arial, sans-serif;
       letter-spacing: 0.1em;
-      font-family: "Montserrat",Helvetica,Arial,sans-serif;
+      text-transform: uppercase;
       font-weight: 700;
       line-height: 1.2;
     }
-
     a {
       cursor: pointer;
       color: #ff7473;
@@ -73,14 +71,12 @@ export default {
       -webkit-transition: all .2s ease-out;
       transition: all .2s ease-out;
     }
-
     a:focus, a:hover {
       color: #ff2827;
       text-decoration: underline;
     }
   }
-
-  &__content {
+  &--content {
     padding: 10px;
   }
 }

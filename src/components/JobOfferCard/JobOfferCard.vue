@@ -2,11 +2,11 @@
   <Card :title="title" :image="image" :imageAlt="imageAlt">
     <template v-slot:card-content>
       <div class="JobOfferCard">
-        <div class="JobOfferCard__subtitle">
+        <div class="JobOfferCard--subtitle">
           <Location :location="location" />
           <Badge :text="type" :variant="typeVariant"></Badge>
         </div>
-        <div class="JobOfferCard__description">
+        <div class="JobOfferCard--description">
           <p>{{description}}</p>
         </div>
       </div>
@@ -70,14 +70,13 @@ export default {
 
 <style scoped lang="scss">
 .JobOfferCard {
-  &__subtitle {
+  &--subtitle {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     margin-bottom: 10px;
   }
-
-  &__description {
+  &--description {
     color: #868e96;
     font-size: 0.9rem;
     margin-bottom: 10px;

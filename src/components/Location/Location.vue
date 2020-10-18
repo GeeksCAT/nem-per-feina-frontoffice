@@ -21,9 +21,9 @@ export default {
 .Location {
   p {
     color: #868e96;
-    font-family: "Montserrat",Helvetica,Arial,sans-serif;
-    font-weight: 300;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
     font-size: 0.75rem;
+    font-weight: 300;
   }
 }
 </style>
