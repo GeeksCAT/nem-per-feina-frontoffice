@@ -25,7 +25,7 @@ export default {
     title: {
       type: String,
       default () {
-        return 'test'
+        return ''
       }
     },
     type: {
@@ -43,13 +43,13 @@ export default {
     location: {
       type: String,
       default () {
-        return 'DHAKA, BANGLADESH'
+        return ''
       }
     },
     description: {
       type: String,
       default () {
-        return 'Some additional info for this screen about validity of the ads, etc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.'
+        return ''
       }
     },
     image: {
@@ -61,7 +61,7 @@ export default {
     imageAlt: {
       type: String,
       default () {
-        return 'test'
+        return ''
       }
     }
   }

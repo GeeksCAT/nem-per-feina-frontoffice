@@ -20,7 +20,7 @@ export default {
     title: {
       type: String,
       default () {
-        return 'test'
+        return ''
       }
     },
     image: {
@@ -32,7 +32,7 @@ export default {
     imageAlt: {
       type: String,
       default () {
-        return 'test'
+        return ''
       }
     }
   }
