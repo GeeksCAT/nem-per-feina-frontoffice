@@ -3,9 +3,7 @@
     <img class="Card--image" :src="image" :alt="imageAlt" />
 
     <div class="Card--title">
-      <h5>
-        <a> {{ title }} </a>
-      </h5>
+      <a class="Card--link"> {{ title }} </a>
     </div>
 
     <div class="Card--content">
@@ -56,29 +54,27 @@ export default {
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
-
-    h5 {
-      font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-      font-size: .875rem;
-      letter-spacing: 0.1em;
-      font-weight: 700;
-      text-transform: uppercase;
-      line-height: 1.2;
-    }
-
-    a {
-      cursor: pointer;
-      color: #ff7473;
-      text-decoration: none;
-      -webkit-transition: all .2s ease-out;
-      transition: all .2s ease-out;
-    }
-
-    a:focus, a:hover {
-      color: #ff2827;
-      text-decoration: underline;
-    }
   }
+
+  &--link {
+    color: #ff7473;
+    cursor: pointer;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    line-height: 1.2;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.2s ease-out;
+  }
+
+  &--link:focus,
+  &--link:hover {
+    color: #ff2827;
+    text-decoration: underline;
+  }
+
   &--content {
     padding: 10px;
   }

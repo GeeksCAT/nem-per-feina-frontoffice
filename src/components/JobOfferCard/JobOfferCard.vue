@@ -81,10 +81,7 @@ export default {
     color: #868e96;
     font-size: 0.9rem;
     margin-bottom: 10px;
-
-    p {
-      text-align: center;
-    }
+    text-align: center;
   }
 }
 </style>
