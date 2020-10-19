@@ -12,18 +12,18 @@ export default {
 
 <style scoped lang="scss">
 .Footer {
-  width: 100vw;
   background: #34314c;
+  width: 100vw;
 }
 
 .FooterText {
+  color: #ffffff;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   font-size: 0.8rem;
-  font-family: "Montserrat",Helvetica,Arial,sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
-  color: white;
-  max-width: 1920px;
   margin: 0 auto;
+  max-width: 1920px;
   padding: 1.5em 1em;
 }
 </style>
