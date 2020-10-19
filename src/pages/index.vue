@@ -9,7 +9,6 @@
   <Link
     label="Software engineer"
     destination="https://google.es"
-    @on-click="onLinkClick"
   />
 </div>
 </template>
@@ -24,9 +23,6 @@ export default {
   methods: {
     onButtonClick () {
       alert('Button have been clicked')
-    },
-    onLinkClick () {
-      alert('Link have been clicked')
     }
   }
 }

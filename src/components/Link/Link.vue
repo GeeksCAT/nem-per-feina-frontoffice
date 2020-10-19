@@ -1,8 +1,7 @@
 <template>
   <h5>
     <a class="Link"
-      :href="destination"
-      @click="$emit('on-click')">
+      :href="destination">
       {{ label }}
     </a>
   </h5>
@@ -20,24 +19,24 @@ export default {
       type: String,
       required: true
     }
-  },
-  emits: ['on-click']
+  }
 }
 </script>
 
 <style scoped lang="scss">
-  .Link {
-    font-family: "Montserrat",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    line-height: 1.2;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: #ff7473;
-    text-decoration: none;
+.Link {
+  color: #ff7473;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+  text-decoration: none;
+  text-transform: uppercase;
 
-    &:focus, &:hover {
-      color: #ff2827;
-      text-decoration: underline;
-    }
+  &:focus,
+  &:hover {
+    color: #ff2827;
+    text-decoration: underline;
   }
+}
 </style>
