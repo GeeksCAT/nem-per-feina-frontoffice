@@ -13,7 +13,7 @@ const Template = (args, { argTypes }) => ({
 
 export const Default = Template.bind({})
 Default.args = {
-  iconName : 'geolocation',
+  iconName: 'geolocation',
   size: 24,
   iconColor: 'black'
 }

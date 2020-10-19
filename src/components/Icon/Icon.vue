@@ -6,9 +6,9 @@
     viewBox="0 0 24 24"
     :aria-labelledby="iconName"
   >
-    <use 
-      :href="`#${iconName}`" 
-      :style="{ fill: iconColor }" 
+    <use
+      :href="`#${iconName}`"
+      :style="{ fill: iconColor }"
     />
   </svg>
 </template>
@@ -27,9 +27,9 @@ export default {
     iconColor: {
       type: String,
       default: 'black'
-    },
-  },
-};
+    }
+  }
+}
 </script>
 
 <style scoped lang="scss">
