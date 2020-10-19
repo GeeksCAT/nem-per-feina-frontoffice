@@ -1,0 +1,15 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-sass-guidelines"
+  ],
+  "rules": {
+    "selector-class-pattern": [
+      "^[A-Z][A-Za-z0-9\\-]+$",
+      {
+        "message": "Selector should be in PascalCase, and can contain hyphens (selector-class-pattern)",
+        "resolveNestedSelectors": true
+      }
+    ]
+  }
+}
