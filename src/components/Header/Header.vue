@@ -19,14 +19,15 @@ export default {
 
 <style scoped lang="scss">
 .Header {
-  width: 100vw;
   background: #746ea9;
+  width: 100vw;
 }
 
 .NavBar {
-  max-width: 1920px;
   margin: 0 auto;
+  max-width: 1920px;
   padding: 0.5em 1em;
+  width: 100%;
 }
 
 .Logo {

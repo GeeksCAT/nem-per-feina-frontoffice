@@ -19,8 +19,11 @@ jobs:
       - name: Install dependencies
         run: yarn
 
-      - name: Enforce code style
-        run: yarn lint
+      - name: Enforce js code style
+        run: yarn lint:js
+
+      - name: Enforce styles code style
+        run: yarn lint:style
 
       - name: Build without failing
         run: yarn build
