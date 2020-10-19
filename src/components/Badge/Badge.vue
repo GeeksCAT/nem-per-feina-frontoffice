@@ -41,47 +41,47 @@ export default {
 </script>
 
 <style scoped lang="scss">
-    .Badge {
-        text-transform: uppercase;
-        font-family: "Montserrat",Helvetica,Arial,sans-serif;
-        font-size: 0.65rem;
-        padding: 5px;
-        font-weight: 500;
-        color: #fff;
-        border-radius: 3px;
-        margin-left: 5px;
-        letter-spacing: 0.1rem;
+  .Badge {
+    border-radius: 3px;
+    color: #fff;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    margin-left: 5px;
+    padding: 5px;
+    text-transform: uppercase;
 
-        &--primary {
-            background-color: #ff7473;
-        }
-
-        &--secondary {
-            background-color: #868e96;
-        }
-
-        &--success {
-            background-color: #5cb85c;
-        }
-
-        &--info {
-            background-color: #17a2b8;
-        }
-
-        &--warning {
-            background-color: #ffc107;
-        }
-
-        &--danger {
-            background-color: #dc3545;
-        }
-
-        &--light {
-            background-color: #fafafa;
-        }
-
-        &--dark {
-            background-color: #343a40;
-        }
+    &--primary {
+      background-color: #ff7473;
     }
+
+    &--secondary {
+      background-color: #868e96;
+    }
+
+    &--success {
+      background-color: #5cb85c;
+    }
+
+    &--info {
+      background-color: #17a2b8;
+    }
+
+    &--warning {
+      background-color: #ffc107;
+    }
+
+    &--danger {
+      background-color: #dc3545;
+    }
+
+    &--light {
+      background-color: #fafafa;
+    }
+
+    &--dark {
+      background-color: #343a40;
+    }
+  }
 </style>
