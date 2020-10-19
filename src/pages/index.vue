@@ -6,7 +6,7 @@
     label="Click me!"
     @on-click="onButtonClick"
   />
-  <Icon 
+  <Icon
     iconName="geolocation"
     size="24"
     iconColor="black"
