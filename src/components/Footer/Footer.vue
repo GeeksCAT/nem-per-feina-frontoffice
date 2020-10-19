@@ -20,16 +20,16 @@ export default {
 
 .Content {
   font-size: 16px;
+  margin: 0 auto;
+  max-width: 1920px;
+  padding: 1.5em 1em;
 }
 
 .FooterText {
   color: #fff;
   font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 700;
   letter-spacing: 1px;
-  margin: 0 auto;
-  max-width: 1920px;
-  padding: 1.5em 1em;
 }
 </style>
