@@ -17,7 +17,7 @@ export default {
 }
 
 .FooterText {
-  color: #ffffff;
+  color: #fff;
   font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   font-size: 0.8rem;
   font-weight: 700;
