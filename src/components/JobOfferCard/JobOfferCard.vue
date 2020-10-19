@@ -71,15 +71,17 @@ export default {
 <style scoped lang="scss">
 .JobOfferCard {
   &--subtitle {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center;
     margin-bottom: 10px;
   }
+
   &--description {
     color: #868e96;
     font-size: 0.9rem;
     margin-bottom: 10px;
+
     p {
       text-align: center;
     }

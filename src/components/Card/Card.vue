@@ -41,29 +41,31 @@ export default {
 
 <style scoped lang="scss">
 .Card {
-  background-color: #ffffff;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
 
   &--image {
     height: auto;
-    width: 100%;
     margin-bottom: 10px;
+    width: 100%;
   }
 
   &--title {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center;
     margin-bottom: 10px;
+
     h5 {
-      font-size: .875rem;
       font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+      font-size: .875rem;
       letter-spacing: 0.1em;
-      text-transform: uppercase;
       font-weight: 700;
+      text-transform: uppercase;
       line-height: 1.2;
     }
+
     a {
       cursor: pointer;
       color: #ff7473;
@@ -71,6 +73,7 @@ export default {
       -webkit-transition: all .2s ease-out;
       transition: all .2s ease-out;
     }
+
     a:focus, a:hover {
       color: #ff2827;
       text-decoration: underline;
