@@ -9,6 +9,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "lint:style": "stylelint 'src/**/*.{scss,vue}'",
+    "lint:style:win": "stylelint \"src/**/*.{scss,vue}\"",
     "lint:js": "eslint 'src/**/*.{js,vue}'",
     "lint": "run-s lint:*",
     "lint-fix": "run-s \"lint:* --fix\"",

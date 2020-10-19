@@ -1,6 +1,8 @@
 <template>
   <footer class="Footer">
-      <p class="FooterText">©2020 Anem per feina</p>
+     <div class="Content">
+        <p class="FooterText">©2020 Anem per feina</p>
+     </div>
   </footer>
 </template>
 
@@ -14,6 +16,10 @@ export default {
 .Footer {
   background: #34314c;
   width: 100vw;
+}
+
+.Content {
+  font-size: 16px;
 }
 
 .FooterText {
