@@ -42,38 +42,36 @@ export default {
 
 <style scoped lang="scss">
   .Button {
-    font-size: 1rem;
-    font-family: "Montserrat",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    letter-spacing: 1px;
-    display: block;
-    cursor: pointer;
-    padding: 0.5em 1em;
-    outline: none;
     border: 1px solid rgb(255, 116, 115);
     border-radius: 0.25em;
-    transition-property: background, border-color;
+    cursor: pointer;
+    display: block;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    outline: none;
+    padding: 0.5em 1em;
     transition-duration: 300ms;
+    transition-property: background, border-color;
 
-    &--variant {
-      &-primary {
-        color: #fff;
-        background: rgb(255, 116, 115);
+    &--variant-primary {
+      background: rgb(255, 116, 115);
+      color: #fff;
+    }
 
-        &:hover {
-          background: rgb(253, 162, 161);
-          border-color: rgb(253, 162, 161);
-        }
-      }
+    &--variant-primary:hover {
+      background: rgb(253, 162, 161);
+      border-color: rgb(253, 162, 161);
+    }
 
-      &-flat {
-        color: rgb(255, 116, 115);
-        background: transparent;
+    &--variant-flat {
+      background: transparent;
+      color: rgb(255, 116, 115);
+    }
 
-        &:hover {
-          background: rgba(253, 162, 161, 0.3);
-        }
-      }
+    &--variant-flat:hover {
+      background: rgba(253, 162, 161, 0.3);
     }
   }
 </style>
