@@ -1,9 +1,9 @@
 <template>
   <h5>
-    <a class="Link"
-      :href="destination">
+    <n-link class="Link" 
+      :to="destination">
       {{ label }}
-    </a>
+    </n-link>
   </h5>
 </template>
 

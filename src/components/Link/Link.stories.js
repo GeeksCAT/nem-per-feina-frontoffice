@@ -14,5 +14,5 @@ const Template = (args, { argTypes }) => ({
 export const Default = Template.bind({})
 Default.args = {
   label: 'Software engineer',
-  destination: 'https://google.es'
+  destination: '/test'
 }

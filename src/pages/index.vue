@@ -8,7 +8,7 @@
   />
   <Link
     label="Software engineer"
-    destination="https://google.es"
+    destination="/test"
   />
 </div>
 </template>
