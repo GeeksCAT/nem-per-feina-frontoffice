@@ -3,6 +3,10 @@ name: Push Check Pipeline
 
 on: [push, pull_request]
 
+defaults:
+  run:
+    working-directory: frontoffice
+
 jobs:
   build:
     name: Build & Lint Job
