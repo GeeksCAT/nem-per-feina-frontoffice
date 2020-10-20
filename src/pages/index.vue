@@ -10,6 +10,11 @@
     label="Software engineer"
     destination="/test"
   />
+  <Icon
+    iconName="geolocation"
+    size="24"
+    iconColor="black"
+  />
 </div>
 </template>
 
@@ -17,9 +22,10 @@
 import { Button } from '../components/Button'
 import { Header } from '../components/Header'
 import { Link } from '../components/Link'
+import { Icon } from '../components/Icon'
 
 export default {
-  components: { Button, Header, Link },
+  components: { Button, Header, Link, Icon },
   methods: {
     onButtonClick () {
       alert('Button have been clicked')
