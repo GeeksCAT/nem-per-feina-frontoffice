@@ -1,37 +1,42 @@
 <template>
   <div class="Card">
-    <img class="Card--image" :src="image" :alt="imageAlt" />
+    <img class="Image" :src="image" :alt="imageAlt" />
 
-    <div class="Card--title">
-      <a class="Card--link"> {{ title }} </a>
-    </div>
+    <div class="Content">
+      <div class="Title">
+        <a class="Link"> {{ title }} </a>
+      </div>
 
-    <div class="Card--content">
-      <slot name="card-content" />
+      <div>
+        <slot name="card-content" />
+      </div>
+
+      <Paragraph :text="description" />
     </div>
   </div>
 </template>
 
 <script>
+import { Paragraph } from '../Paragraph'
+
 export default {
+  components: { Paragraph },
   props: {
     title: {
       type: String,
-      default () {
-        return ''
-      }
+      required: true
+    },
+    description: {
+      type: String,
+      required: true
     },
     image: {
       type: String,
-      default () {
-        return 'https://picsum.photos/id/237/350/233'
-      }
+      required: true
     },
     imageAlt: {
       type: String,
-      default () {
-        return ''
-      }
+      required: true
     }
   }
 }
@@ -42,41 +47,47 @@ export default {
   background-color: #fff;
   display: flex;
   flex-direction: column;
+}
 
-  &--image {
-    height: auto;
-    margin-bottom: 10px;
-    width: 100%;
+.Content {
+  padding: 1em;
+
+  > * {
+    margin-bottom: 1em;
   }
 
-  &--title {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
+  > *:last-child {
+    margin-bottom: 0;
   }
+}
 
-  &--link {
-    color: #ff7473;
-    cursor: pointer;
-    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-    font-size: 0.875rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    line-height: 1.2;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: all 0.2s ease-out;
-  }
+.Image {
+  height: auto;
+  width: 100%;
+}
 
-  &--link:focus,
-  &--link:hover {
+.Title {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.Link {
+  color: #ff7473;
+  cursor: pointer;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s ease-out;
+
+  &:focus,
+  &:hover {
     color: #ff2827;
     text-decoration: underline;
-  }
-
-  &--content {
-    padding: 10px;
   }
 }
 </style>

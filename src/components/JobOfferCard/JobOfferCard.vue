@@ -1,14 +1,9 @@
 <template>
-  <Card :title="title" :image="image" :imageAlt="imageAlt">
+  <Card :title="title" :image="image" :imageAlt="imageAlt" :description="description">
     <template v-slot:card-content>
-      <div class="JobOfferCard">
-        <div class="JobOfferCard--subtitle">
-          <Location :location="location" />
-          <Badge :text="type" :variant="typeVariant"></Badge>
-        </div>
-        <div class="JobOfferCard--description">
-          <p>{{description}}</p>
-        </div>
+      <div class="JobOfferContent">
+        <Location :location="location" />
+        <Badge :text="type" :variant="typeVariant"></Badge>
       </div>
     </template>
   </Card>
@@ -24,64 +19,41 @@ export default {
   props: {
     title: {
       type: String,
-      default () {
-        return ''
-      }
+      required: true
     },
     type: {
       type: String,
-      default () {
-        return 'intershipt'
-      }
+      required: true
     },
     typeVariant: {
       type: String,
-      default () {
-        return 'warning'
-      }
+      required: true
     },
     location: {
       type: String,
-      default () {
-        return ''
-      }
+      required: true
     },
     description: {
       type: String,
-      default () {
-        return ''
-      }
+      required: true
     },
     image: {
       type: String,
-      default () {
-        return 'https://picsum.photos/id/237/350/233'
-      }
+      required: true
     },
     imageAlt: {
       type: String,
-      default () {
-        return ''
-      }
+      required: true
     }
   }
 }
 </script>
 
 <style scoped lang="scss">
-.JobOfferCard {
-  &--subtitle {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-  }
-
-  &--description {
-    color: #868e96;
-    font-size: 0.9rem;
-    margin-bottom: 10px;
-    text-align: center;
-  }
+.JobOfferContent {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 </style>
