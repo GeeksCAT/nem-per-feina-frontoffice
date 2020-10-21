@@ -37,7 +37,11 @@ export default {
     display: block;
     font-family: 'Montserrat', Helvetica, Arial, sans-serif;
     font-size: 1rem;
-    padding: 0.5em 1em;
+    margin: 0 0 1em;
+
+    &:last-child {
+      margin: 0;
+    }
 
     &--small {
       font-size: 0.8rem;
