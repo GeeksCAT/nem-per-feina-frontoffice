@@ -1,10 +1,8 @@
 <template>
-  <h5>
     <n-link class="Link"
       :to="destination">
       {{ label }}
     </n-link>
-  </h5>
 </template>
 
 <script>
