@@ -11,7 +11,7 @@ on:
     
 jobs:
   check-frontoffice:
-    name: Build & Lint Job
+    name: Build & Lint Frontoffice
     runs-on: ubuntu-latest
     defaults:
       run:
