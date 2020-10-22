@@ -19,7 +19,7 @@ export default {
 }
 
 .Content {
-  font-size: 16px;
+  font-size: 1rem;
   margin: 0 auto;
   max-width: 1920px;
   padding: 1.5em 1em;
