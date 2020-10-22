@@ -10,16 +10,25 @@
     "start": "next start",
     "lint:js": "standard \"src/**/*.js\"",
     "lint": "run-s lint:*",
-    "lint-fix": "run-s \"lint:* --fix\""
+    "lint-fix": "run-s \"lint:* --fix\"",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@storybook/addon-actions": "^6.0.26",
+    "@storybook/addon-essentials": "^6.0.26",
+    "@storybook/addon-links": "^6.0.26",
+    "@storybook/react": "^6.0.26",
+    "babel-loader": "^8.1.0",
     "next": "^9.5.5",
     "npm-run-all": "^4.1.5",
+    "react-is": "^16.13.1",
     "standard": "^15.0.0"
   },
   "dependencies": {
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
     "styled-components": "^5.2.0",
     "styled-normalize": "^8.0.7"
   }
