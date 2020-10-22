@@ -1,0 +1,26 @@
+{
+  "name": "anem-per-feina-backoffice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Eudald Dachs <eudago@gmail.com>",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "lint:js": "standard \"src/**/*.js\"",
+    "lint": "run-s lint:*",
+    "lint-fix": "run-s \"lint:* --fix\""
+  },
+  "devDependencies": {
+    "next": "^9.5.5",
+    "npm-run-all": "^4.1.5",
+    "standard": "^15.0.0"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "styled-components": "^5.2.0",
+    "styled-normalize": "^8.0.7"
+  }
+}
