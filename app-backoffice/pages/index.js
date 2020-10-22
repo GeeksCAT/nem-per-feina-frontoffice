@@ -13,7 +13,7 @@ const GlobalStyles = createGlobalStyle`
   }
 `
 const Wrapper = styled.div`
-  background: red;
+  background: blue;
 `
 
 function HomePage () {
