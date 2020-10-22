@@ -1,10 +1,16 @@
 
 name: Push Check Pipeline
 
-on: [push, pull_request]
-
+on: 
+  push:
+    paths:
+      - 'app/**'
+  pull_request:
+    paths:
+      - 'app/**'
+    
 jobs:
-  build:
+  check-frontoffice:
     name: Build & Lint Job
     runs-on: ubuntu-latest
     defaults:
