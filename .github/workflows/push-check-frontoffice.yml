@@ -1,13 +1,7 @@
 
 name: Push Check Pipeline
 
-on: 
-  push:
-    paths:
-      - 'app/**'
-  pull_request:
-    paths:
-      - 'app/**'
+on: [push, pull_request]
     
 jobs:
   pre_job:
