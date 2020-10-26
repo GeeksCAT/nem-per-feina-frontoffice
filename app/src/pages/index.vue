@@ -14,6 +14,9 @@
     size="24"
     iconColor="black"
   />
+  <Title>
+    <h2>FEATURED JOBS</h2>
+  </Title>
 </div>
 </template>
 
@@ -21,9 +24,10 @@
 import { Button } from '../components/Button'
 import { Icon } from '../components/Icon'
 import { Link } from '../components/Link'
+import { Title } from '../components/Title'
 
 export default {
-  components: { Button, Link, Icon },
+  components: { Button, Link, Icon, Title },
   methods: {
     onButtonClick () {
       alert('Button have been clickede2332')
