@@ -1,7 +1,9 @@
 <template>
-  <div>
+  <div class="Page">
     <Header/>
-    <slot></slot>
+    <div class="PageContent">
+      <slot></slot>
+    </div>
     <Footer/>
   </div>
 </template>
@@ -15,3 +17,19 @@ export default {
   components: { Header, Footer }
 }
 </script>
+
+<style scoped lang="scss">
+  .Page {
+    align-items: center;
+    background: #fafafa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .PageContent {
+    flex: 1;
+    max-width: 1920px;
+    width: 100%;
+  }
+</style>
