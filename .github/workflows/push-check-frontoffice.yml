@@ -1,0 +1,38 @@
+
+name: Push Check Pipeline
+
+on: 
+  push:
+    paths:
+      - 'app/**'
+  pull_request:
+    paths:
+      - 'app/**'
+    
+jobs:
+  check-frontoffice:
+    name: Build & Lint Frontoffice
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: app
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v1
+
+      - name: Use Node 12
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Enforce js code style
+        run: yarn lint:js
+
+      - name: Enforce styles code style
+        run: yarn lint:style
+
+      - name: Build without failing
+        run: yarn build

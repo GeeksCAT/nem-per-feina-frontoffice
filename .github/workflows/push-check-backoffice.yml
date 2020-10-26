@@ -1,15 +1,21 @@
 
 name: Push Check Pipeline
 
-on: [push, pull_request]
-
+on: 
+  push:
+    paths:
+      - 'app-backoffice/**'
+  pull_request:
+    paths:
+      - 'app-backoffice/**'
+    
 jobs:
-  build:
-    name: Build & Lint Job
+  check-backoffice:
+    name: Build & Lint Backoffice
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: app
+        working-directory: app-backoffice
     steps:
       - name: Checkout code
         uses: actions/checkout@v1
@@ -24,9 +30,6 @@ jobs:
 
       - name: Enforce js code style
         run: yarn lint:js
-
-      - name: Enforce styles code style
-        run: yarn lint:style
 
       - name: Build without failing
         run: yarn build
