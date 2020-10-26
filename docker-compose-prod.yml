@@ -1,0 +1,17 @@
+version: '3'
+services:
+  frontoffice:
+    build:
+      context: ./
+      dockerfile: Dockerfile-frontoffice
+    image: frontoffice:latest
+    ports:
+      - 3000:3000
+
+  nginx:
+    build:
+      context: ./
+      dockerfile: Dockerfile-nginx
+    image: nginx-front:latest
+    ports:
+      - 80:80
