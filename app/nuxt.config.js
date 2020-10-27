@@ -1,3 +1,10 @@
 export default {
-  srcDir: 'src/'
+  srcDir: 'src/',
+  modules: [
+    '@nuxt/http'
+  ],
+
+  http: {
+    // proxyHeaders: false
+  }
 }
