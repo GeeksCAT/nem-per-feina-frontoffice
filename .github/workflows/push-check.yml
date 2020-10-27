@@ -5,7 +5,7 @@ on: [push, pull_request]
 
 jobs:
   build:
-    name: Build & Lint
+    name: Build & Lint Job
     runs-on: ubuntu-latest
     defaults:
       run:
