@@ -18,10 +18,22 @@
 import { JobOfferCard } from '../components/JobOfferCard'
 import { getAll } from '../services/offers'
 
+const type = {
+  1: 'warning',
+  2: 'good'
+}
+
 export default {
   components: { JobOfferCard },
-  async asyncData ({ app }) {
-    return await getAll(app.$http)
+  async asyncData ({ $http }) {
+    const res = await $http.get('/api/jobs')
+    const data = await res.json()
+    return {
+      offers: data.map((offer) => {
+        offer.type = type[offer.type]
+        return offer
+      })
+    }
   }
 }
 </script>
