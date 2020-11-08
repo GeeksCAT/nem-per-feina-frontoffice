@@ -5,9 +5,15 @@
 </template>
 
 <script>
-import { Page } from '../components/Page'
+import { Page } from "../components/Page";
 
 export default {
-  components: { Page }
-}
+  components: { Page },
+};
 </script>
+
+<style lang="scss">
+* {
+  margin: 0;
+}
+</style>

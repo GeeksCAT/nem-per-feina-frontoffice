@@ -57,6 +57,7 @@
     "vue-loader": "^15.9.3"
   },
   "dependencies": {
+    "@nuxt/http": "^0.6.0",
     "nuxt": "^2.14.7",
     "package.json": "^2.0.1"
   }
