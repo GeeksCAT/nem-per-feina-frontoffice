@@ -91,17 +91,19 @@ export default {
   methods: {
     register: async function() {
       const body = {
-        companyName: this.companyName,
-        companyAddress: this.companyAddress,
+        //companyName: this.companyName,
+        //companyAddress: this.companyAddress,
         email: this.email,
         password: this.password,
-        passwordConfirm: this.passwordConfirm,
+        password2: this.passwordConfirm,
+        gender: 1
       };
 
       console.log(JSON.stringify(body));
 
       const result = await this.$http.post(`/api/register`, body);
-      console.log(JSON.stringify(result));
+      const data = await result.json();
+      console.log(data);
     },
   },
 };

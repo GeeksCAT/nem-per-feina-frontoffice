@@ -29,7 +29,7 @@ export default {
     const res = await $http.get("/api/jobs");
     const data = await res.json();
     return {
-      offers: data.map((offer) => {
+      offers: data.results.map((offer) => {
         offer.type = type[offer.type];
         return offer;
       }),
